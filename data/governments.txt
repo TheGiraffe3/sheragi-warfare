@@ -1,0 +1,41 @@
+# Copyright (c) 2025 by Loymdayddaud
+#
+# Sheragi Warfare is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Sheragi Warfare is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+government "Sheragi (Independent)"
+	swizzle 3
+	color 0.475 0.787 0.784
+	"crew attack" 0.5
+	"crew defense" 3
+	"attitude toward"
+		"Sheragi (Peace Party)" 0.01
+		"Sheragi (War Party)" -0.05
+
+government "Sheragi (Peace Party)"
+	swizzle 3
+	"display name" "Sheragi (Peace)"
+	color 0.196 0.588 0.691
+	"crew attack" 0.5
+	"crew defense" 3
+	"attitude toward"
+		"Sheragi (Independent)" 0.01
+		"Sheragi (War Party)" 0.1
+
+government "Sheragi (War Party)"
+	swizzle 3
+	"display name" "Sheragi (War)"
+	color 0.096 0.408 0.501
+	"crew attack" 0.5
+	"crew defense" 3
+	"attitude toward"
+		"Sheragi (Peace Party)" 0.01
+		"Sheragi (Independent)" -0.05

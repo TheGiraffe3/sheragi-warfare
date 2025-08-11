@@ -1,0 +1,74 @@
+# Copyright (c) 2025 by Loymdayddaud
+#
+# Sheragi Warfare is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Sheragi Warfare is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+planet "Bronze Hammer"
+	attributes sheragi
+	landscape land/badlands4
+	description `While at first glance the planet of Bronze Hammer seems to be devoid of interest, desolate, and empty of all living things, further investigation reveals moss and lichen growing on the surface. Underneath each landing pad lies a special bunker for protection against asteroid impacts; beneath those is a bustling city and manufacturing planet.`
+	description `	According to rumor, the few outfits available to civilians are only a foreshadowing of the massive industrial capacity of the Bronze Hammer.`
+		to display
+			has "sheragi warfare: heard the rumors on bronze hammer"
+	spaceport `The spaceport bar opens out onto a busy road. All sorts of vehicles go whizzing past - trucks, helicopters, and several mechanized drones. The menu is covered with indecipherable text; from what little you can make out they serve nothing you would be remotely interested in.`
+	government "Sheragi (Peace Party)"
+	outfitter "Sheragi Basics"
+	tribute 600
+		threshold 2400
+		fleet "Sheragi (Peace Party)" 6
+
+planet "Diamond Sword"
+	attributes sheragi
+	landscape land/dune4
+	description `The governors on Diamond Sword are open about the unpleasant fact that the planet is purely a military base. On one side of the spaceport are massive arsenals; on the other side are huge tanks of fuel. Almost every landing pad is occupied by a large warship, and a group of Black Diamonds cluster off to one side.`
+	government "Sheragi (War Party)"
+	"required reputation" 10
+	security 0.93
+	tribute 2900
+		threshold 4200
+		fleet "Small Sheragi (War Party)" 5
+		fleet "Large Sheragi (War Party)" 3
+
+planet "Emerald Shield"
+	attributes sheragi
+	landscape land/forest10
+	description `A land of hills covered in verdure next to calm seas and rolling waves makes Emerald Shield a georgeous place to create a major manufacturing center. The inhabitants seem to think so too; the planet is the biggest trading base in Sheragi space, despite its remote location.`
+	description `	However, rumor has it that not all is peaceful. Beneath the green hills lies a hidden armada of warships, preparing to either defend the planet - at all costs - or conquer all of Sheragi space in the name of the Independents.`
+		to display
+			has "sheragi warfare: heard the rumors on emerald shield"
+	government "Sheragi (Peace Party)"
+	shipyard "Sheragi Basics"
+	shipyard "Sheragi Advanced"
+	outfitter "Sheragi Basics"
+	outfitter "Sheragi Advanced"
+	"required reputation" 4
+	bribe 0.1
+	security 0.87
+	tribute 2200
+		threshold 3000
+		fleet "Sheragi (Peace Party)" 2
+		fleet "Sheragi (Peace Party Warfleet)" 5
+
+planet "Sheragi Wormhole"
+	wormhole "Sheragi Wormhole"
+
+planet "Valley of the Saved"
+	attributes sheragi uninhabited
+	landscape land/fog5
+	description `While, in contrast to Valley of the Damned, this planet looks cold and inhospitable, it is actually quite pleasant. Small trees adorn beautiful mountains.`
+	description `	A tunnel into the side of the nearest mountain reveals traces of a prominent civilization, and several pieces of technology lying by the side of a forge indicate the Sheragi have not entirely died out.`
+	government Uninhabited
+
+wormhole "Sheragi Wormhole"
+	mappable
+	link Zubenelhintali Shimmer
+	link Shimmer Zubenelhintali
+	color 0 0.353 0

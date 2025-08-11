@@ -1,0 +1,6 @@
+name "Sheragi Warfare"
+about "This plugin adds a small remnant of the Sheragi near the Rim. They are split into three factions, two of which have sworn undying enmity."
+authors
+	Loymdayddaud
+dependencies
+	"game version" 0.10.7

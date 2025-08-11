@@ -1,0 +1,708 @@
+# Copyright (c) 2025 by Loymdayddaud
+#
+# Sheragi Warfare is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Sheragi Warfare is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+galaxy "label sheragi"
+	pos -800 100
+	sprite label/sheragi
+		scale 0.5
+
+system Burnish
+	pos -904.296 -222.185
+	government "Sheragi (Independent)"
+	habitable 9325.369
+	belt 1044 8
+	link Garnet
+	link Shimmer
+	fleet "Small Sheragi (Independent)" 300
+	fleet "Sheragi (Peace Party)" 500
+	fleet "Large Sheragi (Independent)" 1000
+	fleet "Small Sheragi (War Party)" 2000
+	fleet "Large Sheragi (War Party)" 8000
+	asteroids "small rock" 3 6.947
+	asteroids "medium rock" 6 7.031
+	asteroids "large rock" 1 4.436
+	asteroids "small metal" 12 7.868
+	asteroids "medium metal" 55 8.203
+	asteroids "large metal" 9 5.692
+	trade Clothing 345
+	trade Electronics 829
+	trade Equipment 688
+	trade Food 127
+	trade "Heavy Metals" 838
+	trade Industrial 695
+	trade "Luxury Goods" 1356
+	trade Medical 782
+	trade Metal 308
+	trade Plastic 489
+	object
+		sprite star/g-giant
+		distance 340
+		period 313.465
+	object
+		sprite star/f-supergiant
+		distance 340
+		period 313.465
+		offset 180
+	object
+		sprite planet/gas4-b
+		distance 1276
+		period 188.8
+		object
+			sprite planet/rock3-b
+			distance 285
+			period 181.873
+		object
+			sprite planet/rock7
+			distance 383
+			period 354.577
+	object
+		sprite planet/gas10
+		distance 2145
+		period 411.498
+		object
+			sprite planet/ice0
+			distance 221
+			period 124.191
+	object
+		sprite planet/browndwarf-y
+		distance 2916
+		period 652.241
+		object
+			sprite planet/dust0-b
+			distance 280
+			period 288.557
+	object
+		sprite planet/gas2
+		distance 4030
+		period 1059.704
+	object
+		sprite planet/gateway-active
+		distance 6828
+		period 2337.046
+	object
+		sprite planet/gas17
+		distance 12038
+		period 5470.896
+
+system Garnet
+	pos -1006.296 -247.185
+	government "Sheragi (Independent)"
+	habitable 11350
+	belt 1048 5
+	link Burnish
+	fleet "Small Sheragi (Independent)" 400
+	fleet "Sheragi (Peace Party)" 900
+	fleet "Large Sheragi (Independent)" 950
+	fleet "Small Sheragi (War Party)" 2300
+	fleet "Sheragi (Emerald Sword)" 3000
+	fleet "Large Sheragi (War Party)" 9000
+	asteroids "small rock" 16 6.156
+	asteroids "medium rock" 105 5.184
+	asteroids "large rock" 30 4.131
+	asteroids "small metal" 46 5.427
+	asteroids "medium metal" 83 5.913
+	asteroids "large metal" 1 5.022
+	minables aluminum 31 8.589
+	minables iron 67 5.624
+	trade Clothing 363
+	trade Electronics 865
+	trade Equipment 686
+	trade Food 117
+	trade "Heavy Metals" 850
+	trade Industrial 705
+	trade "Luxury Goods" 1391
+	trade Medical 811
+	trade Metal 283
+	trade Plastic 477
+	object
+		sprite star/b-giant
+		period 10
+	object
+		sprite planet/gas15-b
+		distance 798
+		period 84.638
+		object
+			sprite planet/callisto
+			distance 252
+			period 104.693
+		object
+			sprite planet/dust0
+			distance 415
+			period 520.675
+	object
+		sprite planet/gas3-b
+		distance 2011
+		period 338.595
+		object
+			sprite planet/dust3-b
+			distance 314
+			period 210.327
+	object
+		sprite planet/gateway-inactive
+		distance 2785
+		period 551.823
+	object
+		sprite planet/gas9-b
+		distance 3721
+		period 852.22
+		object
+			sprite planet/europa-b
+			distance 243
+			period 179.193
+	object
+		sprite planet/gateway-active
+		distance 8022
+		period 2697.653
+	object
+		sprite planet/forest12
+		distance 13309
+		period 5764.746
+
+system Gleam
+	pos -906.296 -125.185
+	government "Sheragi (War Party)"
+	habitable 980
+	belt 1739 9
+	belt 2184 7
+	link Gloss
+	link Sparkle
+	fleet "Small Sheragi (War Party)" 400
+	fleet "Large Sheragi (War Party)" 1000
+	fleet "Sheragi (Peace Party)" 1200
+	asteroids "small rock" 4 3.675
+	asteroids "medium rock" 7 2.993
+	asteroids "large rock" 2 2.783
+	asteroids "medium metal" 8 4.305
+	asteroids "large metal" 1 4.147
+	trade Clothing 414
+	trade Electronics 854
+	trade Equipment 704
+	trade Food 244
+	trade "Heavy Metals" 730
+	trade Industrial 801
+	trade "Luxury Goods" 1411
+	trade Medical 769
+	trade Metal 264
+	trade Plastic 495
+	object
+		sprite star/k0-old
+		period 10
+	object
+		sprite planet/rogue-radiating
+		distance 484
+		period 136.055
+	object
+		sprite planet/ocean3
+		distance 914
+		period 353.074
+	object
+		sprite planet/desert1-b
+		distance 1679
+		period 879.069
+	object
+		sprite planet/gas16-b
+		distance 2849
+		period 1943.057
+		object
+			sprite planet/miranda-b
+			distance 226
+			period 160.722
+	object
+		sprite planet/gas7
+		distance 5631
+		period 5399.148
+
+system Glitter
+	pos -911.296 -16.185
+	government "Sheragi (Peace Party)"
+	habitable 139.463
+	belt 1453 10
+	belt 2154 3
+	belt 2511 4
+	link Gloss
+	link Sheen
+	fleet "Sheragi (Peace Party)" 200
+	fleet "Small Sheragi (War Party)" 1400
+	fleet "Large Sheragi (War Party)" 2100
+	asteroids "small rock" 8 3.416
+	asteroids "medium rock" 11 4.223
+	asteroids "large rock" 4 3.602
+	asteroids "small metal" 2 5.154
+	asteroids "medium metal" 23 3.416
+	asteroids "large metal" 1 3.974
+	minables silver 6 3.979
+	minables aluminum 8 6.761
+	minables titanium 11 6.912
+	trade Clothing 409
+	trade Electronics 878
+	trade Equipment 680
+	trade Food 272
+	trade "Heavy Metals" 703
+	trade Industrial 784
+	trade "Luxury Goods" 1316
+	trade Medical 705
+	trade Metal 329
+	trade Plastic 473
+	object
+		sprite star/m-dwarf
+		distance 95.656
+		period 71.841
+	object
+		sprite star/m8
+		distance 5.344
+		period 71.841
+		offset 180
+	object
+		sprite planet/gas13
+		distance 384
+		period 254.875
+	object
+		sprite planet/neptune-b
+		distance 1002
+		period 1074.315
+	object
+		sprite planet/browndwarf-y
+		distance 1896
+		period 2796.325
+	object
+		sprite planet/gas8
+		distance 2723
+		period 4812.841
+		object "Bronze Hammer"
+			sprite planet/rock17-b
+			distance 314
+			period 342.68
+	object
+		sprite planet/gas16
+		distance 4629
+		period 10667.456
+		object
+			sprite planet/ice0-b
+			distance 226
+			period 128.429
+		object
+			sprite planet/io-b
+			distance 365
+			period 263.597
+	object
+		sprite planet/uranus
+		distance 7329
+		period 21251.871
+		object
+			sprite planet/lava0-b
+			distance 259
+			period 109.086
+
+system Gloss
+	pos -888.296 -80.185
+	government "Sheragi (War Party)"
+	habitable 13720
+	belt 1967 10
+	link Gleam
+	link Glitter
+	link Sparkle
+	fleet "Sheragi (Peace Party)" 300
+	fleet "Small Sheragi (War Party)" 2500
+	fleet "Large Sheragi (War Party)" 3000
+	asteroids "small rock" 7 4.211
+	asteroids "medium rock" 23 3.049
+	asteroids "large rock" 14 2.71
+	asteroids "small metal" 7 3.824
+	asteroids "medium metal" 16 3.146
+	asteroids "large metal" 14 3.049
+	trade Clothing 404
+	trade Electronics 885
+	trade Equipment 720
+	trade Food 219
+	trade "Heavy Metals" 681
+	trade Industrial 819
+	trade "Luxury Goods" 1381
+	trade Medical 694
+	trade Metal 302
+	trade Plastic 483
+	object
+		sprite star/o0
+		period 10
+	object
+		sprite planet/water1-b
+		distance 376
+		period 24.898
+	object "Diamond Sword"
+		sprite planet/europa-b
+		distance 805
+		period 77.997
+	object
+		sprite planet/gas1
+		distance 2391
+		period 399.257
+		object
+			sprite planet/dust4
+			distance 472
+			period 318.927
+	object
+		sprite planet/gas9
+		distance 4220
+		period 936.163
+
+system Sheen
+	pos -889 16
+	government "Sheragi (Peace Party)"
+	habitable 230
+	belt 1546 7
+	link Glitter
+	fleet "Sheragi (Peace Party)" 200
+	fleet "Small Sheragi (War Party)" 3000
+	fleet "Large Sheragi (War Party)" 4000
+	asteroids "medium rock" 2 4.095
+	asteroids "large rock" 2 4.532
+	asteroids "small metal" 9 4.204
+	asteroids "medium metal" 9 4.914
+	asteroids "large metal" 6 3.877
+	minables lead 10 5.485
+	trade Clothing 380
+	trade Electronics 848
+	trade Equipment 648
+	trade Food 301
+	trade "Heavy Metals" 628
+	trade Industrial 818
+	trade "Luxury Goods" 1293
+	trade Medical 660
+	trade Metal 355
+	trade Plastic 440
+	object
+		sprite star/m3
+		period 10
+	object
+		sprite planet/water0-b
+		distance 312
+		period 145.354
+	object
+		sprite planet/lava7
+		distance 597
+		period 384.731
+	object "Emerald Shield"
+		sprite planet/ocean6
+		distance 1694
+		period 1838.934
+		object
+			sprite planet/rock0-b
+			distance 205
+			period 110.951
+	object
+		sprite planet/gas5
+		distance 2756
+		period 3816.057
+	object
+		sprite planet/gas17-b
+		distance 3601
+		period 5699.421
+		object
+			sprite planet/rock14
+			distance 266
+			period 113.538
+	object
+		sprite planet/europa-b
+		distance 9589
+		period 24766.01
+
+system Shimmer
+	pos -838.296 -159.185
+	government Uninhabited
+	habitable 7900
+	belt 1211 9
+	belt 1725 6
+	link Burnish
+	link Shine
+	link Sparkle
+	fleet "Small Sheragi (Independent)" 300
+	fleet "Small Sheragi (War Party)" 400
+	fleet "Large Sheragi (War Party)" 700
+	fleet "Large Sheragi (Independent)" 750 
+	fleet "Sheragi (Peace Party)" 800
+	asteroids "small rock" 65 2.484
+	asteroids "medium rock" 16 3.384
+	asteroids "large rock" 61 2.7
+	asteroids "small metal" 76 2.7
+	asteroids "medium metal" 5 2.052
+	asteroids "large metal" 30 2.052
+	minables uranium 42 4.24
+	minables aluminum 55 3.83
+	trade Clothing 382
+	trade Electronics 850
+	trade Equipment 723
+	trade Food 165
+	trade "Heavy Metals" 826
+	trade Industrial 727
+	trade "Luxury Goods" 1403
+	trade Medical 722
+	trade Metal 321
+	trade Plastic 509
+	object
+		sprite star/a-giant
+		period 10
+	object
+		sprite planet/cloud4-b
+		distance 523
+		period 53.827
+		object
+			sprite planet/dust4
+			distance 194
+			period 84.039
+	object
+		sprite planet/gas2-hot
+		distance 1671
+		period 307.405
+		object
+			sprite planet/rock14
+			distance 210
+			period 79.643
+		object
+			sprite planet/luna-b
+			distance 365
+			period 263.597
+	object
+		sprite planet/asura
+		distance 2914
+		period 707.914
+		object
+			sprite planet/dust4-b
+			distance 221
+			period 102.18
+		object
+			sprite planet/dust0-b
+			distance 362
+			period 424.187
+	object
+		sprite planet/saturn
+		distance 3890
+		period 1091.87
+		object
+			sprite planet/desert4-b
+			distance 255
+			period 192.629
+	object
+		sprite planet/gas13
+		distance 6601
+		period 2413.576
+		object
+			sprite planet/ice8-b
+			distance 314
+			period 210.327
+	object "Sheragi Wormhole"
+		sprite planet/wormhole-green
+		distance 10305
+		period 5601.591
+
+system Shine
+	pos -806.296 -204.185
+	government "Sheragi (Independent)"
+	habitable 6986.281
+	belt 1720 7
+	link Shimmer
+	fleet "Small Sheragi (Independent)" 500
+	fleet "Sheragi (Peace Party)" 900
+	fleet "Small Sheragi (War Party)" 1000
+	fleet "Large Sheragi (Independent)" 1100 
+	fleet "Large Sheragi (War Party)" 1500
+	asteroids "small metal" 1 5.915
+	asteroids "large metal" 2 3.315
+	trade Clothing 390
+	trade Electronics 861
+	trade Equipment 703
+	trade Food 225
+	trade "Heavy Metals" 882
+	trade Industrial 700
+	trade "Luxury Goods" 1351
+	trade Medical 731
+	trade Metal 342
+	trade Plastic 534
+	object
+		sprite star/g-supergiant
+		distance 780.5
+		period 1090.258
+	object
+		sprite star/m-supergiant
+		distance 780.5
+		period 1090.258
+		offset 180
+	object
+		sprite planet/gas2-b
+		distance 1905
+		period 397.905
+	object
+		sprite planet/rock17-b
+		distance 2361
+		period 549.011
+	object
+		sprite planet/rock14
+		distance 2604
+		period 635.914
+	object
+		sprite planet/gas7
+		distance 3451
+		period 970.185
+		object
+			sprite planet/dust5
+			distance 289
+			period 128.577
+	object
+		sprite planet/browndwarf-l
+		distance 4198
+		period 1301.669
+	object
+		sprite planet/aera
+		distance 9701
+		period 4572.584
+
+system Sparkle
+	pos -840.296 -115.185
+	government "Sheragi (Peace Party)"
+	habitable 3000
+	belt 1594 5
+	link Gleam
+	link Gloss
+	link Shimmer
+	fleet "Sheragi (Peace Party)" 400
+	fleet "Small Sheragi (War Party)" 500
+	fleet "Large Sheragi (War Party)" 1200
+	fleet "Small Sheragi (Independent)" 1600 
+	fleet "Large Sheragi (Independent)" 2000 
+	asteroids "small rock" 43 6.12
+	asteroids "medium rock" 6 5.832
+	asteroids "large rock" 2 6.84
+	asteroids "small metal" 3 5.4
+	asteroids "medium metal" 43 4.32
+	asteroids "large metal" 58 4.752
+	minables lead 3 8.938
+	minables silver 29 7.415
+	trade Clothing 379
+	trade Electronics 883
+	trade Equipment 718
+	trade Food 211
+	trade "Heavy Metals" 785
+	trade Industrial 761
+	trade "Luxury Goods" 1421
+	trade Medical 726
+	trade Metal 298
+	trade Plastic 480
+	object
+		sprite star/k-giant
+		period 10
+	object
+		sprite planet/venus
+		distance 625
+		period 114.109
+		object
+			sprite planet/rock20
+			distance 177
+			period 89.014
+	object
+		sprite planet/pontes
+		distance 1228
+		period 314.266
+	object
+		sprite planet/gateway-active
+		distance 2153
+		period 729.567
+	object
+		sprite planet/gas13-b
+		distance 3503
+		period 1514.117
+		object
+			sprite planet/oberon
+			distance 304
+			period 326.441
+		object
+			sprite planet/io
+			distance 411
+			period 314.966
+	object
+		sprite planet/jupiter
+		distance 7170
+		period 4433.82
+		object
+			sprite planet/dust1-b
+			distance 292
+			period 155.186
+		object
+			sprite planet/rock14
+			distance 410
+			period 217.267
+
+system Zubenelhintali
+#	hidden
+	pos -754.296 385.815
+	government Uninhabited
+	habitable 700
+	belt 1099
+	belt 2041 7
+	fleet "Sheragi (Peace Party)" 4500
+	fleet "Large Sheragi (War Party)" 9000
+	asteroids "small rock" 9 7.254
+	asteroids "medium rock" 45 7.818
+	asteroids "large rock" 15 8.06
+	asteroids "small metal" 3 6.206
+	asteroids "medium metal" 31 4.352
+	asteroids "large metal" 3 4.755
+	minables lead 11 6.685
+	object
+		sprite star/g3
+		period 10
+	object
+		sprite planet/oberon
+		distance 246
+		period 58.333
+	object
+		sprite planet/rock18
+		distance 510
+		period 174.127
+	object
+		sprite planet/gas17
+		distance 1924
+		period 1275.906
+		object
+			sprite planet/ice0
+			distance 260
+			period 158.475
+	object "Valley of the Saved"
+		sprite planet/earth
+		distance 2195
+		period 1954.195
+	object
+		sprite planet/jupiter-b
+		distance 3452
+		period 3066.318
+		object
+			sprite planet/europa
+			distance 293
+			period 237.254
+	object
+		sprite planet/browndwarf-l-rogue
+		distance 4971
+		period 5298.789
+		object
+			sprite planet/rock7
+			distance 271
+			period 211.04
+		object
+			sprite planet/desert4-b
+			distance 364
+			period 328.522
+		object
+			sprite planet/rock3-b
+			distance 514
+			period 440.499
+	object "Sheragi Wormhole"
+		sprite planet/wormhole-green
+		distance 5618
+		period 6159.195

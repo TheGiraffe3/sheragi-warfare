@@ -1,0 +1,153 @@
+# Copyright (c) 2025 by Loymdayddaud
+#
+# Sheragi Warfare is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Sheragi Warfare is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+fleet "Sheragi (Peace Party)"
+	government "Sheragi (Peace Party)"
+	names "Sheragi Civilian"
+	cargo 3
+	outfitters "Sheragi Basics" "Sheragi Advanced"
+	personality
+		harvests heroic
+		confusion 20
+	variant 5
+		"Ruby Hammer"
+	variant 4
+		"Bronze Edge" 3
+	variant 3
+		"Bronze Edge"
+		"Ruby Hammer"
+	variant 3
+		"Bronze Edge"
+		"White Brand (Peaceful)"
+	variant 2
+		"Bronze Edge" 2
+	variant
+		"Bronze Edge"
+	variant
+		"Bronze Edge"
+		"White Brand (Peaceful)"
+		"Ruby Hammer"
+
+fleet "Sheragi (Peace Party Warfleet)"
+	government "Sheragi (Peace Party)"
+	names "Sheragi Civilian"
+	cargo 3
+	outfitters "Sheragi Basics" "Sheragi Advanced"
+	personality
+		heroic
+	variant 10
+		"Platinum Spear"
+	variant 10
+		"Platinum Spear"
+		"Gold Shield"
+	variant 8
+		"Black Diamond" 20
+	variant 5
+		"Bronze Edge" 5
+	variant 2
+		"Bronze Edge" 13
+	variant
+		"Platinum Spear" 2
+		"Ruby Hammer" 4
+
+fleet "Sheragi (Emerald Sword)"
+	government "Sheragi"
+	names "Sheragi Military"
+	cargo 0
+	variant
+		"Emerald Sword"
+		"Black Diamond" 6
+
+fleet "Small Sheragi (War Party)"
+	government "Sheragi (War Party)"
+	names "Sheragi Military"
+	cargo 0
+	variant 10
+		"Bronze Edge"
+	variant 5
+		"Bronze Edge" 2
+	variant 3
+		"Bronze Edge" 3
+	variant
+		"Gold Shield"
+		"Black Diamond" 8
+
+fleet "Large Sheragi (War Party)"
+	government "Sheragi (War Party)"
+	names "Sheragi Military"
+	cargo 0
+	variant 10
+		"Platinum Spear"
+	variant 10
+		"Gold Shield"
+		"Black Diamond" 8
+	variant 6
+		"Platinum Spear"
+		"Bronze Edge"
+	variant 5
+		"Bronze Edge"
+		"Gold Shield"
+		"Black Diamond" 8
+	variant 3
+		"Gold Shield" 2
+		"Black Diamond" 16
+	variant 2
+		"Gold Shield (Missile)"
+		"Black Diamond" 8
+	variant 2
+		"Bronze Edge" 8
+	variant
+		"Ruby Hammer" 2
+		"Bronze Edge" 4
+
+fleet "Small Sheragi (Independent)"
+	government "Sheragi (Independent)"
+	names "Sheragi Military"
+	cargo 0
+	variant 10
+		"Bronze Edge"
+	variant 5
+		"Bronze Edge" 2
+	variant 3
+		"Bronze Edge" 3
+	variant
+		"Gold Shield"
+		"Black Diamond" 8
+
+fleet "Large Sheragi (Independent)"
+	government "Sheragi (Independent)"
+	names "Sheragi Military"
+	cargo 0
+	variant 10
+		"Platinum Spear"
+	variant 10
+		"Gold Shield"
+		"Black Diamond" 8
+	variant 6
+		"Platinum Spear"
+		"Bronze Edge"
+	variant 5
+		"Bronze Edge"
+		"Gold Shield"
+		"Black Diamond" 8
+	variant 3
+		"Gold Shield" 2
+		"Black Diamond" 16
+	variant 2
+		"Gold Shield (Missile)"
+		"Black Diamond" 8
+	variant 2
+		"Bronze Edge" 8
+	variant
+		"Ruby Hammer" 2
+		"Bronze Edge" 4
