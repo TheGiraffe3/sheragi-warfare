@@ -69,10 +69,6 @@ system Burnish
 		sprite planet/gas10
 		distance 2145
 		period 411.498
-		object
-			sprite planet/ice0
-			distance 221
-			period 124.191
 	object
 		sprite planet/browndwarf-y
 		distance 2916
@@ -86,13 +82,17 @@ system Burnish
 		distance 4030
 		period 1059.704
 	object
-		sprite planet/gateway-active
+		sprite planet/rock5
 		distance 6828
 		period 2337.046
 	object
 		sprite planet/gas17
 		distance 12038
 		period 5470.896
+		object "White Diamond"
+			sprite planet/ice1
+			distance 221
+			period 124.191
 
 system Garnet
 	pos -1006.296 -247.185
@@ -101,7 +101,7 @@ system Garnet
 	belt 1048 5
 	link Burnish
 	fleet "Small Sheragi (Independent)" 400
-	fleet "Sheragi (Peace Party)" 900
+	fleet "Sheragi (Peace Party)" 800
 	fleet "Large Sheragi (Independent)" 950
 	fleet "Small Sheragi (War Party)" 2300
 	fleet "Sheragi (Emerald Sword)" 3000
@@ -148,7 +148,7 @@ system Garnet
 			distance 314
 			period 210.327
 	object
-		sprite planet/gateway-inactive
+		sprite planet/zenith-cold
 		distance 2785
 		period 551.823
 	object
@@ -160,10 +160,10 @@ system Garnet
 			distance 243
 			period 179.193
 	object
-		sprite planet/gateway-active
+		sprite planet/lava4
 		distance 8022
 		period 2697.653
-	object
+	object "Clouded Ingot"
 		sprite planet/forest12
 		distance 13309
 		period 5764.746
@@ -205,10 +205,15 @@ system Gleam
 		sprite planet/ocean3
 		distance 914
 		period 353.074
-	object
+	object "Gold Blade"
 		sprite planet/desert1-b
 		distance 1679
 		period 879.069
+		object
+			sprite star/k5-old
+				scale 0.3
+			distance 226
+			period 160.722
 	object
 		sprite planet/gas16-b
 		distance 2849
@@ -223,6 +228,7 @@ system Gleam
 		period 5399.148
 
 system Glitter
+	hidden
 	pos -911.296 -16.185
 	government "Sheragi (Peace Party)"
 	habitable 139.463
@@ -355,6 +361,7 @@ system Gloss
 		period 936.163
 
 system Sheen
+	hidden
 	pos -889 16
 	government "Sheragi (Peace Party)"
 	habitable 230
@@ -559,8 +566,9 @@ system Shine
 		sprite planet/browndwarf-l
 		distance 4198
 		period 1301.669
-	object
+	object "Opal Halberd"
 		sprite planet/aera
+			scale 0.5
 		distance 9701
 		period 4572.584
 
@@ -610,8 +618,8 @@ system Sparkle
 		sprite planet/pontes
 		distance 1228
 		period 314.266
-	object
-		sprite planet/gateway-active
+	object "Copper Bow"
+		sprite planet/aviskir
 		distance 2153
 		period 729.567
 	object
@@ -640,7 +648,7 @@ system Sparkle
 			period 217.267
 
 system Zubenelhintali
-#	hidden
+	hidden
 	pos -754.296 385.815
 	government Uninhabited
 	habitable 700

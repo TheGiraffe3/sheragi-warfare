@@ -130,7 +130,140 @@ ship "Platinum Spear"
 	"final explode" "nuke explosion" 2
 	"final explode" "nuke residue fast" 50
 	description "A powerful Sheragi warship designed to break through enemy lines. The few flaws in its design are made up for by its immense size, making it one of the most powerful warships ever seen."
-	description "This is one of the most powerful ships in the Sheragi arsenal."
+
+
+ship "Opal Glaive"
+	sprite ship/opalglaive
+	thumbnail "thumbnail/opalglaive"
+	attributes
+		category "Heavy Warship"
+		licenses
+			"Sheragi Capital"
+		"cost" 50000000
+		"shields" 24000
+		"hull" 42000
+#		"required crew" 85
+#		"bunks" 276
+		"automaton" 1
+		"crew equivalent" 276
+		"mass" 1520
+		"drag" 20
+		"heat dissipation" 0.45
+		"fuel capacity" 800
+		"cargo space" 60
+		"outfit space" 1420
+		"weapon capacity" 520
+		"engine capacity" 230
+		"spinal mount" 1
+		weapon
+			"blast radius" 420
+			"shield damage" 7664
+			"hull damage" 3832
+			"hit force" 11495
+	outfits
+		"Sheragi Pulse Beam Turret" 6
+		"Sheragi Anti-Missile" 2
+		"Large EM Battery"
+		"Large Hybrid Cooling"
+		"Electronic Warfare System" 2
+		
+		"Fusion Drive"
+	engine 83 275
+		zoom 1.3
+		over
+	engine -83 275
+		zoom 1.3
+		over
+	engine 0 279
+		zoom 1.35
+		over
+	"reverse engine" -123.5 163.5
+		zoom 0.6
+		angle 335
+		over
+	"reverse engine" 123.5 163.5
+		zoom 0.6
+		angle 25
+		over
+	"steering engine" -123.5 163.5
+		zoom 0.5
+		angle 155
+		over
+		left
+	"steering engine" 123.5 163.5
+		zoom 0.5
+		angle 205
+		over
+		right
+	"steering engine" -34.5 -221.5
+		zoom 0.2
+		angle 60
+		over
+		right
+	"steering engine" -39 -193.5
+		zoom 0.2
+		angle 60
+		over
+		right
+	"steering engine" -43.5 -165.5
+		zoom 0.2
+		angle 60
+		over
+		right
+	"steering engine" 34.5 -221.5
+		zoom 0.2
+		angle 300
+		over
+		left
+	"steering engine" 39 -193.5
+		zoom 0.2
+		angle 300
+		over
+		left
+	"steering engine" 43.5 -165.5
+		zoom 0.2
+		angle 300
+		over
+		left
+	turret -18 -41.5 "Sheragi Pulse Beam Turret"
+	turret 18 -41.5 "Sheragi Pulse Beam Turret"
+	turret -70 70.5 "Sheragi Pulse Beam Turret"
+	turret 70 70.5 "Sheragi Pulse Beam Turret"
+	turret -95 168 "Sheragi Pulse Beam Turret"
+	turret 95 168 "Sheragi Pulse Beam Turret"
+	turret 0 114 "Sheragi Anti-Missile"
+	turret 0 183 "Sheragi Anti-Missile"
+	gun 0 -276
+	explode "tiny explosion" 60
+	explode "small explosion" 26
+	explode "medium explosion" 47
+	explode "large explosion" 39
+	explode "huge explosion" 42
+	explode "nuke explosion" 2
+	"final explode" "nuke explosion" 2
+	"final explode" "nuke residue fast" 50
+	description "The Opal Glaive is the Peace Party's version of the Platinum Spear, and it has a spinal mount to aid it in total destruction if necessary."
+
+
+ship "Opal Glaive" "Opal Glaive (Dragonflame)"
+	outfits
+		"Dragonflame Cannon"
+		"Sheragi Pulse Beam Turret" 2
+		"Sheragi Anti-Missile" 2
+		"Large EM Battery"
+		"Large Hybrid Cooling"
+		"Electronic Warfare System" 2
+		
+		"Fusion Drive"
+	gun "Dragonflame Cannon"
+	turret
+	turret
+	turret "Sheragi Pulse Beam Turret"
+	turret "Sheragi Pulse Beam Turret"
+	turret
+	turret
+	turret "Sheragi Anti-Missile"
+	turret "Sheragi Anti-Missile"
 
 
 ship "Gold Shield"
@@ -442,7 +575,181 @@ ship "Ruby Hammer"
 	explode "large explosion" 42
 	explode "huge explosion" 28
 	"final explode" "final explosion large" 2
-	description "This Sheragi freighter outclasses any other freighter merely through its size. This ship was designed to cross great distances without stopping."
+	description "This Sheragi freighter outclasses most other freighters merely through its size. This ship was designed to cross great distances without stopping."
+
+
+ship "Crystal Bow"
+	sprite ship/crystalbow
+	thumbnail thumbnail/crystalbow
+	swizzle 3
+	attributes
+		category "Heavy Warship"
+		licenses
+			"Sheragi Capital"
+		"cost" 400000000
+		"shields" 28250
+		"hull" 89000
+		"required crew" 18
+		"bunks" 22
+		"crew equivalent" 950
+		"mass" 12900
+		"drag" 108
+		"heat dissipation" 0.99
+		"fuel capacity" 1400
+		"cargo space" 900
+		"outfit space" 2342
+		"weapon capacity" 560
+		"engine capacity" 460
+		weapon
+			"blast radius" 330
+			"shield damage" 3300
+			"hull damage" 1650
+			"hit force" 4950
+	outfits
+		"Sheragi Anti-Missile"
+		"Dense Particle Shielding" 2
+		"Large EM Battery"
+		"Fusion Core"
+		"Small Hybrid Cooling"
+		"Sheragi Solar Intake" 3
+		"Cargo Expansion" 62
+		
+		"Fusion Drive"
+	gun -64.5 -227.5
+	gun 64.5 -227.5
+	gun -119.5 -67
+	gun 119.5 -67
+	turret -41 -200
+	turret 41 -200
+	turret -75.5 -139
+	turret 75.5 -139
+	turret -13 -108
+	turret 13 -108
+	turret -69.5 -31.5
+	turret 69.5 -31.5
+	turret -118 23
+	turret 118 23
+	turret 0 33.5 "Sheragi Anti-Missile"
+	turret -76 83.5
+	turret 76 83.5
+	turret -12.5 118
+	turret 12.5 118
+	turret -41 146.5
+	turret 41 146.5
+	turret -11.5 165
+	turret 11.5 165
+	engine 0 285.5
+	engine -29.5 214.5
+		zoom 0.3
+	engine 29.5 214.5
+		zoom 0.3
+	engine -98 116
+		zoom 0.5
+		angle 35
+	engine 98 116
+		zoom 0.5
+		angle -35
+	"steering engine" -98 116
+		zoom 0.5
+		angle 35
+		left
+	"steering engine" 98 116
+		zoom 0.5
+		angle -35
+		right
+	"steering engine" -101 -90
+		zoom 0.4
+		angle 90
+		right
+	"steering engine" 101 -90
+		zoom 0.4
+		angle -90
+		left
+	"reverse engine" -22.5 -238
+		zoom 0.2
+	"reverse engine" 22.5 -238
+		zoom 0.2
+	description "The Crystal Bow is a relatively new design, and makes heavy use of automatons to do work onboard; as a result the required crew for the ship is much lower than a comparative human freighter."
+
+
+ship "Crystal Bow" "Crystal Bow (War)"
+	outfits
+		"Bunk Room"
+		"Dense Particle Shielding" 2
+		"Fusion Core"
+		"Fusion Drive"
+		"Kinetic Spear" 438
+		"Kinetic Spear Launcher" 2
+		"Kinetic Spear Rack" 71
+		"Large EM Battery"
+		"Particle Waveform Turret" 8
+		"Sheragi Anti-Missile" 4
+		"Sheragi Solar Intake" 3
+		"Small Hybrid Cooling"
+	gun "Kinetic Spear Launcher"
+	gun "Kinetic Spear Launcher"
+	gun
+	gun
+	turret "Sheragi Anti-Missile"
+	turret "Sheragi Anti-Missile"
+	turret "Particle Waveform Turret"
+	turret "Particle Waveform Turret"
+	turret "Particle Waveform Turret"
+	turret "Particle Waveform Turret"
+	turret
+	turret
+	turret
+	turret
+	turret
+	turret
+	turret
+	turret "Particle Waveform Turret"
+	turret "Particle Waveform Turret"
+	turret "Particle Waveform Turret"
+	turret "Particle Waveform Turret"
+	turret "Sheragi Anti-Missile"
+	turret "Sheragi Anti-Missile"
+
+
+ship "Crystal Bow" "Crystal Bow (Well-Defended)"
+	outfits
+		"Bunk Room"
+		"Cargo Expansion" 34
+		"Dense Particle Shielding" 2
+		"Fusion Core"
+		"Fusion Drive"
+		"Kinetic Spear" 96
+		"Kinetic Spear Launcher" 2
+		"Kinetic Spear Rack" 14
+		"Large EM Battery"
+		"Particle Waveform Turret" 8
+		"Sheragi Anti-Missile"
+		"Sheragi Solar Intake" 3
+		"Small Hybrid Cooling"
+	gun "Kinetic Spear Launcher"
+	gun "Kinetic Spear Launcher"
+	gun
+	gun
+	turret "Particle Waveform Turret"
+	turret "Particle Waveform Turret"
+	turret "Particle Waveform Turret"
+	turret "Particle Waveform Turret"
+	turret "Particle Waveform Turret"
+	turret "Particle Waveform Turret"
+	turret "Particle Waveform Turret"
+	turret "Particle Waveform Turret"
+	turret
+	turret
+	turret "Sheragi Anti-Missile"
+	turret
+	turret
+	turret
+	turret
+	turret
+	turret
+	turret
+	turret
+
 
 ship "White Brand"
 	sprite ship/whitebrand

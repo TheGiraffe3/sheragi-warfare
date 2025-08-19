@@ -1,0 +1,60 @@
+# Copyright (c) 2025 by Loymdayddaud
+#
+# Sheragi Warfare is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Sheragi Warfare is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Sheragi Warfare: Start Timer"
+	landing
+	minor
+	to offer
+		or
+			has "Sheragi Archaeology: Epilogue: done"
+			has "remnant: cognizance calm"
+	on offer
+		event "sheragi warfare: reveal timer" 200
+
+event "sheragi warfare: reveal timer"
+	system Glitter
+		remove hidden
+	system Sheen
+		remove hidden
+	system Zubenelhintali
+		remove hidden
+
+mission "Sheragi Warfare: Notification"
+	landing
+	name "Investigate Rumors"
+	description "An anonymous person has contacted you about a possible new system near Zubenelhakrabi. Visit the system and find out what you can."
+	source
+		near "Sol" 0 100
+	waypoint "Zubenelhintali"
+	destination "Valley of the Saved"
+	minor
+	to offer
+		has "event: sheragi warfare: reveal timer"
+		not "visited system: Zubenelhintali"
+	on offer
+		conversation
+			`As you land, a message appears on your communicator. "Captain <last>, the Universal Starwatchers Association has recently found a new star near the Zubenelhakrabi system, which sources tell us you have discovered. Please visit the system and find out what you can."`
+			`	The message abruptly cuts off without explaining how they will learn.`
+				accept
+	on enter "Zubenelhintali"
+		fail
+
+mission "Sheragi Warfare: Reveal"
+	job
+	name "Reveal"
+	description "Accept this job to unhide Sheragi Warfare systems."
+	source
+		government "Omnis"
+	on accept
+		event "sheragi warfare: reveal timer" 0
+		fail

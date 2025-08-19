@@ -25,13 +25,54 @@ planet "Bronze Hammer"
 		threshold 2400
 		fleet "Sheragi (Peace Party)" 6
 
+planet "Clouded Ingot"
+	attributes sheragi
+	landscape land/forest6
+	description `Clouded Ingot sees the sun rarely. Huge fog banks surround the single inhabited continent, and large belts of smog mark city locations.`
+	description `	This planet also hosts the capital, the warship assembly lines, the cargo facilities, and the only outfitter in Independent space. Due to this, the Peace Party maintains a large trade fleet on the world, and Clouded Ingot serves as the major objective for War Party expeditionary forces, all of which have - so far - failed in their attempts.`
+	spaceport `Visibility in the spaceport is close to zero. Distinguishing the ship on the next landing pad is difficult, and identifying the one beyond well-nigh impossible. However, underground, where the trading counters, job board, and bank reside, viewing range increases dramatically.`
+	spaceport `	Given the cloudy nature and underground recesses on this planet, an invasion force would need to be prepared to fight a guerilla war if they wished to entirely subjugate the planet.`
+		to display
+			has "sheragi warfare: heard the rumors on clouded ingot"
+	government "Sheragi (Independent)"
+	shipyard "Sheragi Basics"
+	shipyard "Sheragi Advanced"
+	shipyard "Platinum Spear"
+	shipyard "Opal Glaive"
+	outfitter "Sheragi Basics"
+	outfitter "Sheragi Advanced"
+	bribe 0.1
+	security 0.9
+	tribute 2000
+		threshold 3400
+		fleet "Small Sheragi (Independent)" 7
+		fleet "Large Sheragi (Independent)" 5
+
+planet "Copper Bow"
+	attributes sheragi
+	landscape land/fields15
+	description `Copper Bow is the last planet on the path to Independent space, but this doesn't seem to have negatively affected the amount of trading that goes on. Most say that Copper Bow handles the second largest amount of traffic, in raw tons, of any Sheragi planet.`
+	description `	For some reason, an enterprising Sheragi group painted an entire swath of the planet's many trees and grasslands in a strange, twisting, green and blue shape. Nobody knows quite why.`
+	spaceport `The outfitter here stocks every single outfit the Sheragi still mass-produce. Some say that Emerald Swords are still made here, but in secret. How they obtained this secret information, nobody has thought to ask.`
+	spaceport `	Given the fact that Copper Bow is right between War Party and Independent space, it would be a prime target for raiders of both sides, should the Peace Party ever declare war.`
+		to display
+			has "sheragi warfare: heard the rumors on copper bow"
+	government "Sheragi (Peace Party)"
+	outfitter "Sheragi Basics"
+	outfitter "Sheragi Advanced"
+	tribute 1800
+		threshold 5000
+		fleet "Sheragi (Peace Party)" 7
+		fleet "Sheragi (Peace Party Emerald Sword)"
+
 planet "Diamond Sword"
 	attributes sheragi
 	landscape land/dune4
 	description `The governors on Diamond Sword are open about the unpleasant fact that the planet is purely a military base. On one side of the spaceport are massive arsenals; on the other side are huge tanks of fuel. Almost every landing pad is occupied by a large warship, and a group of Black Diamonds cluster off to one side.`
+	description `	You are not allowed to access the services on this planet.`
 	government "Sheragi (War Party)"
-	"required reputation" 10
 	security 0.93
+	"required reputation" 20
 	tribute 2900
 		threshold 4200
 		fleet "Small Sheragi (War Party)" 5
@@ -41,21 +82,60 @@ planet "Emerald Shield"
 	attributes sheragi
 	landscape land/forest10
 	description `A land of hills covered in verdure next to calm seas and rolling waves makes Emerald Shield a georgeous place to create a major manufacturing center. The inhabitants seem to think so too; the planet is the biggest trading base in Sheragi space, despite its remote location.`
-	description `	However, rumor has it that not all is peaceful. Beneath the green hills lies a hidden armada of warships, preparing to either defend the planet - at all costs - or conquer all of Sheragi space in the name of the Independents.`
+	description `	However, rumor has it that not all is peaceful. Beneath the green hills lies a hidden armada of warships, preparing to either defend the planet - at all costs - or conquer all of Sheragi space in the name of the Peace Party.`
+		to display
+			has "sheragi warfare: heard the rumors on emerald shield"
+	spaceport `Due to the large amount of commerce that flows through this planet, the spaceport is large, bustling, and secure. In all directions, you can see guards with hands on their weapons, cautiously surveying the crowds.`
+	spaceport `	Of course, the conspirists say that the guards really exist to imprison any War Party trader, if and or when war is declared. However, the possibility seems remote.`
 		to display
 			has "sheragi warfare: heard the rumors on emerald shield"
 	government "Sheragi (Peace Party)"
 	shipyard "Sheragi Basics"
 	shipyard "Sheragi Advanced"
+	shipyard "Opal Glaive"
 	outfitter "Sheragi Basics"
 	outfitter "Sheragi Advanced"
-	"required reputation" 4
 	bribe 0.1
 	security 0.87
 	tribute 2200
 		threshold 3000
 		fleet "Sheragi (Peace Party)" 2
 		fleet "Sheragi (Peace Party Warfleet)" 5
+
+planet "Gold Blade"
+	attributes sheragi
+	landscape land/desert1
+	description `The Sheragi must have a good reason for continued inhabitance of this planet. Massive deserts stretch further than the eye can see. Perhaps the desert is caused by the miniature star that orbits the planet.`
+	description `	Gold Blade is the War Party's main economic base. On this planet are the massive factories that churn out warships in the hundreds. On this planet also are the complicated gas giant fuel harvesting stations that supply both the Peace Party and the War Party.`
+	description `	If those two ever declare war on each other, the Peace Party will have to find some way of producing their own hyperspace fuel.`
+		to display
+			has "sheragi warfare: heard the rumors on gold blade"
+	spaceport `Huge silos lie along the side of the landing pads. Presumably these are the fuel storage tanks. Near them lies an open-air section of the production line that produces Platinum Spears. A crowd of Sheragi watches as paint is sprayed onto the ship, then hardened by the merciless glare of the sun.`
+	government "Sheragi (War Party)"
+	shipyard "Sheragi Basics"
+	shipyard "Sheragi Advanced"
+	shipyard "Platinum Spear"
+	outfitter "Sheragi Basics"
+	outfitter "Sheragi Advanced"
+	security 0.04
+	tribute 1300
+		threshold 1600
+		fleet "Small Sheragi (War Party)" 6
+		fleet "Large Sheragi (War Party)" 2
+
+planet "Opal Halberd"
+	attributes sheragi
+	landscape land/fog1
+	description `Opal Halberd is on the outskirts of Independent space, and serves mainly to project military strength into the Shimmer system. As a result, there are very few amenities; only a fuel tank is accessible.`
+	port "Fueling De_pot"
+		recharges energy fuel
+		services "offers missions"
+		description `Given the sparse nature of this planet, it is vaguely surprising to see the number of Peace Party ships parked on the landing pads. The PP's leaders must have some reason for being here besides trading, given that there are no Independent civilians on Opal Halberd.`
+	government "Sheragi (Independent)"
+	tribute 500
+		threshold 1200
+		fleet "Small Sheragi (Independent)" 2
+		fleet "Large Sheragi (Independent)"
 
 planet "Sheragi Wormhole"
 	wormhole "Sheragi Wormhole"
@@ -72,3 +152,15 @@ wormhole "Sheragi Wormhole"
 	link Zubenelhintali Shimmer
 	link Shimmer Zubenelhintali
 	color 0 0.353 0
+
+planet "White Diamond"
+	attributes sheragi
+	landscape land/snow4
+	description `Great drifts of snow cover the sweeping mountains of White Diamond. The treeline is far below what expectations would be on Earth, and every growing thing you see is an evergreen.`
+	description `	Any reason for inhabiting this planet is unclear. While the landscape provides great natural beauty when viewed from the interior of a spaceship, on the outside cold air chills you to the bone. Regardless of this, several permanent settlements have been made, and more are expected.`
+	spaceport `The spaceport is clustered together inside one huge, heated building. Given that the inhabitants of this planet do not mass-produce any sort of outfit or spaceship, there is room for several large food deposits and metal blocks. All seems peaceful, and there is hardly a quarter of the bustle of Emerald Shield.`
+	government "Sheragi (Independent)"
+	security 0.01
+	tribute 900
+		threshold 600
+		fleet "Small Sheragi (Independent)" 3

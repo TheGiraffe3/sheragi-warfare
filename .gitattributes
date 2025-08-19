@@ -1,0 +1,8 @@
+# Don't export the below things when downloading with the green "Code" button
+.gitattributes export-ignore
+
+README.md export-ignore
+
+galaxy.png export-ignore
+areajibtrav.png export-ignore
+allspace.png export-ignore

@@ -18,18 +18,27 @@ shipyard "Sheragi Basics"
 	"Black Diamond"
 
 shipyard "Sheragi Advanced"
-	"Platinum Spear"
 	"Gold Shield"
 	"Ruby Hammer"
 	"White Brand"
 
+shipyard "Opal Glaive"
+	"Opal Glaive"
+
+shipyard "Platinum Spear"
+	"Platinum Spear"
+
 shipyard "Sheragi Superadvanced"
+	"Crystal Bow"
 	"Emerald Sword"
 
 planet " Sheragi"
 	shipyard "Sheragi Basics"
 	shipyard "Sheragi Advanced"
 	shipyard "Sheragi Superadvanced"
+	outfitter "Sheragi Basics"
+	outfitter "Sheragi Advanced"
+	outfitter "Sheragi Cheat"
 
 # outfitters
 
@@ -76,6 +85,11 @@ outfitter "Sheragi Advanced"
 	"Tactical Scanner"
 	"Luxury Accommodations"
 	"Dense Particle Shielding"
+
+outfitter "Sheragi Cheat"
+	"Sheragi License"
+	"Sheragi Capital License"
+	"Sheragi Pirate License"
 
 # names
 

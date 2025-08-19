@@ -19,24 +19,28 @@ fleet "Sheragi (Peace Party)"
 	personality
 		harvests heroic
 		confusion 20
-	variant 5
+	variant 15
 		"Ruby Hammer"
-	variant 4
+	variant 12
 		"Bronze Edge" 3
-	variant 3
+	variant 9
 		"Bronze Edge"
 		"Ruby Hammer"
-	variant 3
+	variant 9
 		"Bronze Edge"
 		"White Brand (Peaceful)"
-	variant 2
+	variant 6
 		"Bronze Edge" 2
-	variant
+	variant 4
+		"Crystal Bow"
+	variant 3
 		"Bronze Edge"
-	variant
+	variant 3
 		"Bronze Edge"
 		"White Brand (Peaceful)"
 		"Ruby Hammer"
+	variant 2
+		"Crystal Bow (Well-Defended)"
 
 fleet "Sheragi (Peace Party Warfleet)"
 	government "Sheragi (Peace Party)"
@@ -45,23 +49,42 @@ fleet "Sheragi (Peace Party Warfleet)"
 	outfitters "Sheragi Basics" "Sheragi Advanced"
 	personality
 		heroic
-	variant 10
-		"Platinum Spear"
-	variant 10
-		"Platinum Spear"
+	variant 20
+		"Opal Glaive"
+	variant 20
+		"Opal Glaive"
 		"Gold Shield"
-	variant 8
+	variant 16
 		"Black Diamond" 20
-	variant 5
+	variant 10
 		"Bronze Edge" 5
-	variant 2
+	variant 6
+		"Opal Glaive (Dragonflame)"
+	variant 4
 		"Bronze Edge" 13
-	variant
-		"Platinum Spear" 2
+	variant 3
+		"Crystal Bow (Well-Defended)"
+	variant 2
+		"Opal Glaive" 2
 		"Ruby Hammer" 4
+	variant 2
+		"Opal Glaive (Dragonflame)" 2
+	variant
+		"Crystal Bow (Well-Defended)"
+		"Opal Glaive (Dragonflame)"
+	variant
+		"Crystal Bow (War)"
 
 fleet "Sheragi (Emerald Sword)"
 	government "Sheragi"
+	names "Sheragi Military"
+	cargo 0
+	variant
+		"Emerald Sword"
+		"Black Diamond" 6
+
+fleet "Sheragi (Peace Party Emerald Sword)"
+	government "Sheragi (Peace Party)"
 	names "Sheragi Military"
 	cargo 0
 	variant
