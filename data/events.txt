@@ -53,8 +53,7 @@ mission "Sheragi Warfare: Reveal"
 	job
 	name "Reveal"
 	description "Accept this job to unhide Sheragi Warfare systems."
-	source
-		government "Omnis"
+	source " Sheragi"
 	on accept
 		event "sheragi warfare: reveal timer" 0
 		fail
